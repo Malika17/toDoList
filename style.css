@@ -8,7 +8,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(24, 33, 42) 50.3%);
     padding: 10px;
     
 
@@ -22,11 +22,12 @@
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 
 }
 .todo-app h2{
-    color: #002795;
+    color: #11141c;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -79,7 +80,7 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(unchecked.png);
+    background-image: url(images/unchecked.png);
     background-size: cover;
     background-position: center;
     top: 8px;
@@ -92,7 +93,7 @@ ul li.checked{
 
 }
 ul li.checked::before{
-    background-image: url(checked.png);
+    background-image: url(images/checked.png);
 }
 ul li span{
     position : absolute;
@@ -104,9 +105,10 @@ ul li span{
     color: #555;
     line-height: 40px;
     text-align: center;
+    border-radius: 50%;
 }
 
 ul li span:hover{
     background: #edeef0;
-    
+
 }
